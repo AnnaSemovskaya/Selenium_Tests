@@ -17,5 +17,5 @@ def browser(request):
 @pytest.fixture(scope="function")
 def language(request):
     language = request.config.getoption("language")   
-    print(language)
+    print("Fixture received language from options and it is: " + str(language))
     return(language)

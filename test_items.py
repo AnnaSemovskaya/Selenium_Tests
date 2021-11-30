@@ -2,7 +2,7 @@ import time
 import pytest
 
 def test_find_basket_button(browser, language):
-    print(str(language) + " inside")
+    print("Test received language from fixture and it is: " + str(language))
     longlink=f"http://selenium1py.pythonanywhere.com/{language}/catalogue/coders-at-work_207/"
     browser.implicitly_wait(10)
     browser.get(longlink)
